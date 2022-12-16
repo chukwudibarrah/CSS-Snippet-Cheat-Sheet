@@ -1,5 +1,33 @@
 /* Centre header title and paragragh and change font colour */
 
 
+.mainTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.introPara {
+    display: flex;
+}
 
 /* Apply box structure to HTML */
+
+.allBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.allBoxes section {
+    padding: 10px;
+    border: dotted red;
+}
+
+
+/* FOOTER CSS */
+
+footer {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
