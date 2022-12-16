@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head id="mainHead">
+    <h1 class="mainTitle">
+        CSS Snippet Cheatsheet
+    </h1>
+
+    <p class="introPara">
+        Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to
+        this page! Select any snippet below and it'll automatically select all of the code for you to copy.
+    </p>
+</head>
+
+<section id="content">
+    <h2 class="boxTitle">
+        Flexbox Row
+    </h2>
+
+    <p class="boxPara">
+        Use these three properties to create a Flexbox row layout.
+    </p>
+
+    <pre class="codeBox">.row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+        </pre>
+
+
+    <h2 class="boxTitle">
+        Flexbox Column
+    </h2>
+
+    <p class="boxPara">
+        Use this to create a Flexbox column layout.
+    </p>
+
+    <pre class="thecode">.column {
+        display: flex;
+        flex-direction: column
+        }
+        </pre>
+
+    <h2 class="boxTitle">
+        CSS Grid Lavout
+    </h2>
+
+    <p class="boxPara">
+        Build a 12-column layout using CSS Grid
+    </p>
+
+    <pre class="thecode">grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns
+        repeat (12, 1fr);
+        }
+        </pre>
+
+    <h2 class="boxTitle">
+        Linear Gradients
+    </h2>
+
+    <p class="boxPara">
+        This will create a background linear gradient from top to bottom.
+    </p>
+
+    <pre class="thecode"> linear-gradient-background {
+        background-image: linear-gradient (
+        rgba (232, 102, 236, 0.3) 0%, 
+        rgba (232, 102, 236, 0.6) 100%
+        );
+        }
+        </pre>
+
+    <h2 class="boxTitle">
+        Box Transition Glow
+    </h2>
+
+    <p class="boxPara">
+        Use transition and box shadows to glow on hover.
+    </p>
+
+    <pre class="thecode">.code-card .card-header {
+        border-radius: 8px;
+        transition: all 0.5s ease- in-out;
+        }
+        . code-card: hover,
+        .code-card: hover .card-header {
+        box-shadow: inset Opx Opx 8px rgba (232, 102, 236, 1), 0 0 15px 
+        rgba (232, 102, 236, 1);
+        }
+        </pre>
+
+    <h2 class="boxTitle">
+        Overlay Card with Title
+    </h2>
+
+    <p class="boxPara">
+        Use position properties and negative margins to raise elements higher than their natural starting point.
+    </p>
+
+    <pre class="thecode">.card-header {
+        position: relative;
+        margin-top: -20px;
+        }
+        </pre>
+</section>
+
+
+<footer>
+    Made with * and CSS
+</footer>
+
+</html>
