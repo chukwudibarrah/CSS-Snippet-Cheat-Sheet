@@ -1,33 +1,121 @@
-/* Centre header title and paragragh and change font colour */
+/* At size 992px and above */
+@media screen and (min-width: 992px) {
+.allBoxes section {
+   width: 20%;
+  }
+}   
 
+/* At size 768px and above */
+@media screen and (max-width: 991px) {
+.allBoxes section {
+   width: 30%;
+  }
+}
+
+/* On mobile devices, anything under 768px */
+@media screen and (max-width: 768px) {
+.allBoxes section {
+   width: 100%;
+  }
+}
+
+/* At size 2076px and above */
+@media only screen and (min-width: 2075px) {
+.allBoxes section {
+   width: 25%;
+  }
+}
+    
+
+/* Centre header title and paragragh and change font colour */
+.mainPage {
+    background-color: rgb(54, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 
 .mainTitle {
     display: flex;
     justify-content: center;
+    color: green;
 }
 
 .introPara {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    color: white;
+    font-size: 13px;
+    padding: 20px;
 }
 
 /* Apply box structure to HTML */
-
+/*
 .allBoxes {
     display: grid;
+    padding: 20px;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+*/
 
-.allBoxes section {
-    padding: 10px;
-    border: dotted red;
+.allBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.allBoxes section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+    margin: 30px;
+    border: dashed red;
+}
+
+section h2 {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    padding: 10px;
+    border: dashed red;
+    border-radius: 7px;
+    margin-top: -50px;
+    background-color: rgb(54, 47, 47);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+section p {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: green;
+    font-size: 11px;
+}
+
+section pre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    height: 55%;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 9px;
+    background-color: green;
+}
 
 /* FOOTER CSS */
 
 footer {
     display: flex;
     padding: 20px;
+    color: green;
+    font-weight: 900;
     justify-content: center;
 }
